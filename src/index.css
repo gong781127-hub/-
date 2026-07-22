@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@300;400;500;600;700;900&family=Fira+Code:wght@400;500&family=Ma+Shan+Zheng&family=Long+Cang&family=Zhi+Mang+Xing&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Noto Serif SC", Georgia, serif;
+  --font-mono: "Fira Code", monospace;
+  --font-calligraphy-bold: "Ma Shan Zheng", cursive, serif;
+  --font-calligraphy-flow: "Long Cang", cursive, serif;
+  --font-calligraphy-brush: "Zhi Mang Xing", cursive, serif;
+}
+
+/* Custom classical scrollbar styled like a slender ink line */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(214, 206, 191, 0.2);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(140, 28, 28, 0.25); /* Vermilion red stamp tone */
+  border-radius: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 28, 28, 0.6);
+}
+
+/* Base style resets for starry background */
+html {
+  scrollbar-gutter: stable;
+  overflow-y: auto;
+}
+
+html, body {
+  background-color: #fcfbf7; /* Light elegant rice-paper tone */
+  color: #1a1b1d;            /* Calligraphy ink tone */
+  font-family: var(--font-serif); /* Use Serif as default for ultimate Chinese wind */
+}
+
+/* Classical Calligraphy Styling with Realistic Ink Shadows */
+.font-brush-title {
+  font-family: var(--font-calligraphy-brush);
+  color: #242c26; /* Dark jade-stone ink black */
+  filter: drop-shadow(4px 4px 6px rgba(10, 18, 14, 0.45));
+}
+
+.font-brush-subtitle {
+  font-family: var(--font-calligraphy-brush);
+  color: #8c1c1c; /* Traditional vermilion seal ink red */
+  filter: drop-shadow(3px 3px 5px rgba(140, 28, 28, 0.35));
+}
+
+/* Custom 16-column grid utility */
+.grid-cols-16 {
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+}
+
+
+
+

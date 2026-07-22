@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: 时序回响：二十四节气数字声音盲盒",
+  "description": "融合中国传统二十四节气律动与数字声音自制盲盒，用户可以切换推荐古典声源或上传自定义声音编写独一无二的时序旋律，并在演奏时观赏星宿与音律相互呼应的流光闪烁光效。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
